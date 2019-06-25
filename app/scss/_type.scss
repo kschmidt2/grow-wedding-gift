@@ -58,7 +58,7 @@ h3.chart-title {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 10px;
-    width: 60%;
+    width: 70%;
     @include desktop {
         width: 80%;
     }
@@ -81,10 +81,17 @@ h3.chart-title {
     &:before {
         content: "Graphic: ";
     }
+    @include desktop {
+        padding-right: 10px;
+      }
 }
 
 .chart-source {
     &:before {
         content: "Source: ";
     }
+    float: left;
+    @include desktop {
+        float: none;
+      }
 }
