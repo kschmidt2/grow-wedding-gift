@@ -38,7 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         tooltip: {
             shadow: false,
-            padding: 10
+            padding: 10,
+            formatter: function() {
+                return Math.round(this.y) + '%';
+            }
         },
         responsive: {
             rules: [{
