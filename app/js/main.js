@@ -13,25 +13,25 @@ document.addEventListener('DOMContentLoaded', function () {
             spacingBottom: 35,
             spacingRight: 100
         }, 
+        data: {
+            googleSpreadsheetKey: '1a_QdySJQ5ay4tGk2sz1SHLUDl90gas3GixGaXaaavW4',
+        },
         title: {
             text: null
         },
         legend: {
-            align: 'right',
-            symbolRadius: 0,
-            verticalAlign: 'top',
-            x: 10,
-            itemMarginTop: -10
+            enabled: false
         },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
-        },
+        // xAxis: {
+        //     categories: ['Apples', 'Bananas', 'Oranges']
+        // },
         yAxis: {
             title: false,
             labels: {
                 useHTML: true,
                 overflow: 'allow'
-            }
+            },
+            tickAmount: 4
         },
         credits: {
             enabled: false
@@ -58,13 +58,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
               }
             }]
-        },
-        series: [{
-            name: 'Jane',
-            data: [1, 6, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
+        }
+        // series: [{
+        //     name: 'Jane',
+        //     data: [1, 6, 4]
+        // }, {
+        //     name: 'John',
+        //     data: [5, 7, 3]
+        // }]
     });
 });
