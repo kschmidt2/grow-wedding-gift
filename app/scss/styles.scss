@@ -1,4 +1,4 @@
-$breakpoint-small: 525px;
+$breakpoint-small: 500px;
 
 @mixin mobile {
   @media (min-width: #{$breakpoint-small}) {
