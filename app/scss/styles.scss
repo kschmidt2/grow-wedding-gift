@@ -3,7 +3,13 @@ $breakpoint-md: 660px;
 $breakpoint-lg: 717px;
 
 @mixin x-small {
-  @media (max-width: #{$breakpoint-sm - 1px}) {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin middle {
+  @media (min-width: 501px) and (max-width: #{$breakpoint-sm - 1px}) {
     @content;
   }
 }
@@ -48,7 +54,10 @@ a {
     height: 400px;
   }
   @include large {
-    height: 400px;
+    height: 500px;
+  }
+  @include middle {
+    height: 500px;
   }
 }
 
