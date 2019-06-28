@@ -9,13 +9,13 @@ $breakpoint-lg: 717px;
 }
 
 @mixin sm-md-xl {
-  @media (min-width: #{$breakpoint-sm + 1px}) and (max-width: #{$breakpoint-md}) {
+  @media (min-width: #{$breakpoint-sm + 1px}) {
     @content;
   }
 }
 
 @mixin large {
-  @media (min-width: #{$breakpoint-sm}) and (max-width: #{$breakpoint-sm}) {
+  @media (width: #{$breakpoint-sm}) {
     @content;
   }
 }
