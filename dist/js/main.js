@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
     legend: {
       enabled: false
     },
+    plotOptions: {
+      series: {
+        pointPadding: 0.05
+      }
+    },
     xAxis: {
       labels: {
         style: {
