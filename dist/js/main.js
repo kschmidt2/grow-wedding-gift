@@ -71,6 +71,11 @@ document.addEventListener('DOMContentLoaded', function () {
           tooltip: {
             enabled: false
           },
+          plotOptions: {
+            series: {
+              pointPadding: 0.1
+            }
+          },
           xAxis: {
             labels: {
               reserveSpace: true,
