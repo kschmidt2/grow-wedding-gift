@@ -22,9 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
         legend: {
             enabled: false
         },
+        plotOptions: {
+            series: {
+                pointPadding: 0.25
+            }
+        },
         xAxis: {
             labels: {
-                overflow: 'allow'
+                reserveSpace: false,
+                align: 'left',
+                x: 5,
+                y: -12,
+                style: {
+                    whiteSpace: 'nowrap',
+                  }
             }
         },
         yAxis: {
@@ -60,6 +71,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 tooltip: {
                     enabled: false
+                },
+                xAxis: {
+                    labels: {
+                        reserveSpace: true,
+                        align: 'right',
+                        x: -5,
+                        y: 5
+                    }
                 }
               }
             }]
