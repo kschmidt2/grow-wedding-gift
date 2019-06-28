@@ -22,9 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
         legend: {
             enabled: false
         },
-        // xAxis: {
-        //     categories: ['Apples', 'Bananas', 'Oranges']
-        // },
+        xAxis: {
+            labels: {
+                overflow: 'allow'
+            }
+        },
         yAxis: {
             title: false,
             labels: {
