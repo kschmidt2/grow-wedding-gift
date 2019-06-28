@@ -22,17 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
         legend: {
             enabled: false
         },
-        plotOptions: {
-            series: {
-                pointPadding: 0.25
-            }
-        },
         xAxis: {
             labels: {
-                reserveSpace: false,
-                align: 'left',
-                x: 5,
-                y: -12,
                 style: {
                     whiteSpace: 'nowrap',
                   }
@@ -71,19 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 tooltip: {
                     enabled: false
-                },
-                plotOptions: {
-                    series: {
-                        pointPadding: 0.1
-                    }
-                },
-                xAxis: {
-                    labels: {
-                        reserveSpace: true,
-                        align: 'right',
-                        x: -5,
-                        y: 5
-                    }
                 }
               }
             }]
